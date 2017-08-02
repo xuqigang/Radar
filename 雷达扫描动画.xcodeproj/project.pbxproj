@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183D89C31D93651800281FFE /* RadarIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D89C21D93651800281FFE /* RadarIndicatorView.m */; };
 		18B0A1541D92808C000CAF2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0A1531D92808C000CAF2B /* main.m */; };
 		18B0A1571D92808C000CAF2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0A1561D92808C000CAF2B /* AppDelegate.m */; };
 		18B0A15A1D92808C000CAF2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0A1591D92808C000CAF2B /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		18B0A15F1D92808C000CAF2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B0A15E1D92808C000CAF2B /* Assets.xcassets */; };
 		18B0A1621D92808C000CAF2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B0A1601D92808C000CAF2B /* LaunchScreen.storyboard */; };
 		18B0A16D1D92808C000CAF2B /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0A16C1D92808C000CAF2B /* ______UITests.m */; };
+		18B0A17A1D928157000CAF2B /* RadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0A1791D928157000CAF2B /* RadarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183D89C11D93651800281FFE /* RadarIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarIndicatorView.h; sourceTree = "<group>"; };
+		183D89C21D93651800281FFE /* RadarIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarIndicatorView.m; sourceTree = "<group>"; };
 		18B0A14F1D92808B000CAF2B /* 雷达扫描动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "雷达扫描动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B0A1531D92808C000CAF2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18B0A1551D92808C000CAF2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		18B0A1681D92808C000CAF2B /* 雷达扫描动画UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "雷达扫描动画UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B0A16C1D92808C000CAF2B /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		18B0A16E1D92808C000CAF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B0A1781D928157000CAF2B /* RadarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarView.h; sourceTree = "<group>"; };
+		18B0A1791D928157000CAF2B /* RadarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		18B0A1511D92808B000CAF2B /* 雷达扫描动画 */ = {
 			isa = PBXGroup;
 			children = (
+				18B0A1771D928140000CAF2B /* RadarView */,
 				18B0A1551D92808C000CAF2B /* AppDelegate.h */,
 				18B0A1561D92808C000CAF2B /* AppDelegate.m */,
 				18B0A1581D92808C000CAF2B /* ViewController.h */,
@@ -109,6 +116,17 @@
 				18B0A16E1D92808C000CAF2B /* Info.plist */,
 			);
 			path = "雷达扫描动画UITests";
+			sourceTree = "<group>";
+		};
+		18B0A1771D928140000CAF2B /* RadarView */ = {
+			isa = PBXGroup;
+			children = (
+				18B0A1781D928157000CAF2B /* RadarView.h */,
+				18B0A1791D928157000CAF2B /* RadarView.m */,
+				183D89C11D93651800281FFE /* RadarIndicatorView.h */,
+				183D89C21D93651800281FFE /* RadarIndicatorView.m */,
+			);
+			path = RadarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +178,7 @@
 				TargetAttributes = {
 					18B0A14E1D92808B000CAF2B = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PZ4Q9YS9B9;
+						DevelopmentTeam = A384Z6ZPQF;
 						ProvisioningStyle = Automatic;
 					};
 					18B0A1671D92808C000CAF2B = {
@@ -216,8 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B0A15A1D92808C000CAF2B /* ViewController.m in Sources */,
+				183D89C31D93651800281FFE /* RadarIndicatorView.m in Sources */,
 				18B0A1571D92808C000CAF2B /* AppDelegate.m in Sources */,
 				18B0A1541D92808C000CAF2B /* main.m in Sources */,
+				18B0A17A1D928157000CAF2B /* RadarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,10 +371,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PZ4Q9YS9B9;
+				DEVELOPMENT_TEAM = A384Z6ZPQF;
 				INFOPLIST_FILE = "雷达扫描动画/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "----.------";
+				PRODUCT_BUNDLE_IDENTIFIER = leida.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -363,10 +383,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PZ4Q9YS9B9;
+				DEVELOPMENT_TEAM = A384Z6ZPQF;
 				INFOPLIST_FILE = "雷达扫描动画/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "----.------";
+				PRODUCT_BUNDLE_IDENTIFIER = leida.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -414,6 +434,7 @@
 				18B0A1731D92808C000CAF2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18B0A1741D92808C000CAF2B /* Build configuration list for PBXNativeTarget "雷达扫描动画UITests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +443,7 @@
 				18B0A1761D92808C000CAF2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
